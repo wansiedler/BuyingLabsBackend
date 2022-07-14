@@ -88,7 +88,7 @@ router.post(`/${API}/booking`, async (req, res) => {
             })
         );
 
-        await res.json(JSON.parse(response.body));
+        res.json(JSON.parse(response.body));
     } catch (err) {
         await res.json(err);
     }
